@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{commons/layout}">
+<head>
+  <title>TOP PAGE</title>
+  <meta name="description" content="SpringBootとThymeleafのLayoutを使ってWebサイトを作るサンプルです。ここはトップページです。" />
+</head>
+<body>
+<div class="container-fluid">
+  <div layout:fragment="contents" th:remove="tag">トップページを想定</div>
+</div>
+</body>
+</html>
